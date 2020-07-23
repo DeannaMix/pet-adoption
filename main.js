@@ -1,6 +1,6 @@
 const pets = [
  {
-    image: "https://s3.amazonaws.com/petcentral.com/wp-content/uploads/2016/09/01160419/black-cat-1-940x503.jpg,
+    image: "https://s3.amazonaws.com/petcentral.com/wp-content/uploads/2016/09/01160419/black-cat-1-940x503.jpg",
     name: "Mocha",
     color: "Brown",
     specialSkill: "Fetch",
