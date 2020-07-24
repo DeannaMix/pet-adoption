@@ -72,6 +72,9 @@ const init1 = () => {
     buildPetCards();
 }
 
-init1()
+init1();
+
+
+
  
     
