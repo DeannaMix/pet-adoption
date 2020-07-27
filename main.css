@@ -1,11 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-    background-color: seagreen;
+    background-color: hsl(34, 53%, 82%);
+	background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+	hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+	hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+	hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+	hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+	hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+	),
+	repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+	hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+	hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+	hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+	hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+	hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
+);
+}
+
+.title {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: 1em;
+	border: rgb(73, 73, 73) 4px solid;
+	background: #7C2459;
+	background: -webkit-linear-gradient(top left, #7C2459, #709591);
+	background: -moz-linear-gradient(top left, #7C2459, #709591);
+	background: linear-gradient(to bottom right, #7C2459, #709591);
+}
+
+.title h1 {
+	padding: 1em;
+	font-size: 36px;
+	text-align: center;
+	color: rgb(248, 200, 200);
+}
+
+.title h3 {
+	padding: 1em;
 }
 
 .pets {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+	justify-content: space-evenly;
+}
+
+.pet {
+	margin: 3em;
+	text-align: center;
+	border: #404140 2px solid;
+	background: #f07d83;
+}
+
+.pet h2 {
+	border: #ad5aa9;
+	background: #9acc85;
+	padding: 1em;
 }
 
 .p{
@@ -14,11 +69,28 @@ body {
 
 .pet img {
     width: 350px;
-    height: 350px
+	height: 350px
+}
+
+.pet h3 {
+	padding: 1em;
+	text-transform: capitalize;
 }
 
 .pet-type {
-    text-transform: uppercase;
+	text-transform: uppercase;
+	border: 2px rgb(226, 132, 132);
+}
+
+.pet p{
+	padding: 1em;
+	text-align: center;
+}
+
+.pet-type {
+	background: rgb(105, 82, 105);
+	color: whitesmoke;
+	text-transform: uppercase;
 }
 
 .cat-btn {
@@ -89,13 +161,13 @@ body {
 }
 .all-btn {
 	box-shadow:inset 0px 1px 0px 0px #9acc85;
-	background:linear-gradient(to bottom, #4f69a0 5%, #bee043 100%);
+	background:linear-gradient(to bottom, #d7f555 5%, #e04377 100%);
 	background-color:#74ad5a;
 	border:1px solid #3b6e22;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:Arial;              
 	font-size:13px;
 	font-weight:bold;
 	padding:6px 12px;
