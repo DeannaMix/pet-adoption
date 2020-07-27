@@ -2,23 +2,23 @@
 
 const pets = [
  {
-    image: "https://s3.amazonaws.com/petcentral.com/wp-content/uploads/2016/09/01160419/black-cat-1-940x503.jpg",
+    image: "https://www.purinaproclub.com/sites/g/files/auxxlc346/files/styles/facebook_share/public/Resources_Dog%20Articles_Health_Line%20126_Thumb.jpg?itok=18TUaZP2",
     name: "Mocha",
-    color: "Brown",
+    color: "Grey",
     specialSkill: "Fetch",
     typeOfPet: "dog",
   },
   {
     image: "https://s3.amazonaws.com/petcentral.com/wp-content/uploads/2016/09/01160419/black-cat-1-940x503.jpg",
     name: "Kitters",
-    color: "Spotted",
+    color: "Black",
     specialSkill: "Sleeping",
     typeOfPet: "cat",
   },
   {
     image: "https://i.pinimg.com/originals/1d/26/14/1d26144b04873f9a13ee05c0ae8d583f.jpg",
     name: "Chomper",
-    color: "Green",
+    color: "Grey",
     specialSkill: "Chomping",
     typeOfPet: "dino",
   },
@@ -74,7 +74,62 @@ const init1 = () => {
 
 init1();
 
+const dogButton = document.getElementById("dog-btn");
+const catButton = document.getElementById("cat-btn");
+const dinoButton = document.getElementById("dino-btn");
+const allButton = document.getElementById("all-btn");
 
+const getCats = document.getElementsByClassName("pet-cat");
+const getDogs = document.getElementsByClassName("pet-dog");
+const getDinos = document.getElementsByClassName("pet-dino");
+
+dogButton.addEventListener("click", function (event) {
+  for (let l = 0; l < getCats.length; l++) {
+    getCats[l].style.display = "none";
+  }
+  for (let k = 0; k < getDinos.length; k++) {
+    getDinos[k].style.display = "none";
+  }
+  for (let f = 0; f < getDogs.length; f++) {
+    getDogs[f].style.display = "block";
+  }
+});
+
+catButton.addEventListener("click", function (event) {
+  for (let l = 0; l < getDogs.length; l++) {
+    getDogs[l].style.display = "none";
+  }
+  for (let k = 0; k < getDinos.length; k++) {
+    getDinos[k].style.display = "none";
+  }
+  for (let f = 0; f < getCats.length; f++) {
+    getCats[f].style.display = "block";
+  }
+});
+
+dinoButton.addEventListener("click", function (event) {
+  for (let l = 0; l < getCats.length; l++) {
+    getCats[l].style.display = "none";
+  }
+  for (let k = 0; k < getDogs.length; k++) {
+    getDogs[k].style.display = "none";
+  }
+  for (let f = 0; f < getDinos.length; f++) {
+    getDinos[f].style.display = "block";
+  }
+});
+
+allButton.addEventListener("click", function (event) {
+  for (let l = 0; l < getCats.length; l++) {
+    getCats[l].style.display = "block";
+  }
+  for (let f = 0; f < getDinos.length; f++) {
+    getDinos[f].style.display = "block";
+  }
+  for (let k = 0; k < getDogs.length; k++) {
+    getDogs[k].style.display = "block";
+  }
+});
 
  
     
