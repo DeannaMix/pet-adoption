@@ -34,7 +34,7 @@ const pets = [
     name: "BK",
     color: "Orange",
     specialSkill: "Boxing",
-    typeOfPet: "Cat",
+    typeOfPet: "cat",
   },
   {
     image: "https://vignette.wikia.nocookie.net/landbeforetime/images/0/0b/Littlefoot_IV.png/revision/latest?cb=20171227183122",
@@ -56,7 +56,7 @@ const buildPetCards = () => {
     let domString = '';
 
     for (let j = 0; j < pets.length; j++) {
-      domString += `<div class="pet">`
+      domString += `<div class="pet pet-${pets[j].typeOfPet}">`;
       domString +=   `<div class="pet-name"><h2>${pets[j].name}</h2></div>`;
       domString +=   `<div class="pet-image"><img src=${pets[j].image} alt="Image of a ${pets[j].typeOfPet}"></div>`
       domString +=   `<div class="pet-color"><h3></h3>${pets[j].color}</h3></div>`
@@ -130,6 +130,3 @@ allButton.addEventListener("click", function (event) {
     getDogs[k].style.display = "block";
   }
 });
-
- 
-    
